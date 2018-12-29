@@ -5,11 +5,10 @@ updated: 2018-12-18 12:37:26
 mathjax: false
 categories: 
 tags:
-typora-root-url: vagrant
-typora-copy-images-to: vagrant
+typora-root-url: Vagrant
+typora-copy-images-to: Vagrant
 top: 
 ---
-
 
 ---
 typora-root-url: vagrant
@@ -53,7 +52,7 @@ typora-copy-images-to: vagrant
 
 网站：<https://www.vagrantup.com/>
 
-![img](/wps12BE.tmp.jpg)
+![img](wps12BE.tmp.jpg)
 
  
 
@@ -75,7 +74,7 @@ typora-copy-images-to: vagrant
 
 1. 先安装virtualBox（4.3版本） ，全程下一步即可。
 
-![1538187060443](/1538187060443.png) 
+![1538187060443](1538187060443.png) 
 
 
 
@@ -83,7 +82,7 @@ typora-copy-images-to: vagrant
 
 2. 在安装vagrant（最新的），全程下一步即可。
 
-![1538179806838](/1538179806838.png)
+![1538179806838](1538179806838.png)
 
  
 
@@ -91,7 +90,7 @@ typora-copy-images-to: vagrant
 
 如果之前我们的电脑安装过VMware这个软件，这个软件安装之后需要在我们自己电脑上虚拟出来一些网卡，则我们为了防止可能影响我们的virtualbox，则我们先把VMware这些网卡全部禁用。
 
-![1538187172549](/1538187172549.png)
+![1538187172549](1538187172549.png)
 
 
 
@@ -99,7 +98,7 @@ typora-copy-images-to: vagrant
 
 1. virtualbox安装后，可以点击该软件，显示如下
 
-![img](/wps12D1.tmp.jpg) 
+![img](wps12D1.tmp.jpg) 
 
 上面的这个软件就是一个虚拟机软件，我们可以使用它去创建很多的虚拟电脑，然后在虚拟电脑上面进行操作系统的安装，但是这个过程是很繁琐的，也是耗费时间的，没有任何的意义。完全没有必要自己尝试去装操作系统，或者说在安装之后，在该操作系统上面去搭建属于自己的开发环境，一般来说我们可以在安装完成该软件之后，在安装一个vagrant的软件帮我们去管理上面的虚拟机软件，然后通过vagrant去下载我们需要的操作系统，并且把操作系统直接导入上面的虚拟机里面去，而不需要自己去安装操作系统，搭建环境。
 
@@ -107,7 +106,7 @@ typora-copy-images-to: vagrant
 
 2. vagrant安装之后的测试命令，查看一下版本即可。
 
-![img](/wps12D2.tmp.jpg) 
+![img](wps12D2.tmp.jpg) 
 
 如果使用 `vagrant -v` 可以查看到版本信息，代表vagrant安装是没有问题的
 
@@ -117,15 +116,15 @@ typora-copy-images-to: vagrant
 
 注意：由于vagrant最好是使用Linux的`cli`环境，所以最好装一个Linux的环境模拟，如 `git` 或 `cmder`
 
-![img](/wps12E3.tmp.jpg) 
+![img](wps12E3.tmp.jpg) 
 
 安装成功后，鼠标右键即可看到如下
 
-![img](/wps12E4.tmp.jpg) 
+![img](wps12E4.tmp.jpg) 
 
 点击后，出现如下的界面
 
-![img](/wps12F4.tmp.jpg) 
+![img](wps12F4.tmp.jpg) 
 
  
 
@@ -145,7 +144,7 @@ typora-copy-images-to: vagrant
 
 本次课程使用自己下载的盒子进行操作
 
-![1538189780340](/1538189780340.png)
+![1538189780340](1538189780340.png)
 
  
 
@@ -153,7 +152,7 @@ typora-copy-images-to: vagrant
 
 
 
-![1538187287539](/1538187287539.png)
+![1538187287539](1538187287539.png)
 
 
 
@@ -179,7 +178,7 @@ typora-copy-images-to: vagrant
    >  vagrant box add centos64 C:/workspace/centos64/centos65_x64.box
    ```
 
-   ![1538187404455](/1538187404455.png)
+   ![1538187404455](1538187404455.png)
 
 
 
@@ -194,7 +193,7 @@ typora-copy-images-to: vagrant
 执行 `vagrant init centos64 `命令的时候，这里的centos64是上面使用 `vagrant box add` 添加盒子时候指定的名称。
 
 
-![1538187707232](/1538187707232.png)
+![1538187707232](1538187707232.png)
 
  
 
@@ -202,13 +201,13 @@ typora-copy-images-to: vagrant
 
 1. 配置用户信息
 
-![1538189548360](/1538189548360.png)
+![1538189548360](1538189548360.png)
 
 
 
 2. 配置一下公共的网络 ， 和我们的自己的电脑(宿主机) 处于同一个网络。
 
-![1538189533091](/1538189533091.png)
+![1538189533091](1538189533091.png)
 
 
 
@@ -218,7 +217,7 @@ typora-copy-images-to: vagrant
 > vagrant reload
 ```
 
-![1538189479973](/1538189479973.png)
+![1538189479973](1538189479973.png)
 
 
 
@@ -226,7 +225,7 @@ typora-copy-images-to: vagrant
 
 ### 虚拟机连接工具-SSH
 
-![1538189371457](/1538189371457.png)
+![1538189371457](1538189371457.png)
 
 
 
@@ -265,7 +264,7 @@ config.ssh.password
 
 如果大家要退出执行，在linux下执行exit即可。
 
-![1538190875110](/1538190875110.png)
+![1538190875110](1538190875110.png)
 
 
 
@@ -277,7 +276,7 @@ config.ssh.password
 > vagrant halt
 ```
 
- ![1538191013605](/1538191013605.png)
+ ![1538191013605](1538191013605.png)
 
 
 
@@ -297,7 +296,7 @@ config.ssh.password
 > vagrant package --base  centos65_default_1538191254489_16849  --out   C:/workspace/mycentos65.box
 ```
 
-![1538191932374](/1538191932374.png)
+![1538191932374](1538191932374.png)
 
 
 
