@@ -7,7 +7,7 @@ categories:
 tags:
 typora-root-url: Vagrant
 typora-copy-images-to: Vagrant
-top: 
+top: 1
 ---
 
 ---
